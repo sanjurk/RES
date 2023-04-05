@@ -7,7 +7,7 @@
                 </a>
             </li>
             &emsp&emsp&emsp&emsp&emsp&emsp&emsp
-            &emsp&emsp&emsp&emsp&emsp
+            &emsp&emsp&emsp&emsp
             <li class="register" id="register" onclick="onProgress();">
                 <a href="https://tekwizard.rf.gd/?i=2">
                     <i class="fa fa-home" aria-hidden="true"></i>Home</a>   
@@ -31,11 +31,13 @@
             padding: 0;
             font-family: 'Comfortaa', cursive;
             display: flex;
-        background: url("https://wallpaperboat.com/wp-content/uploads/2020/12/14/63731/mysterious-07.jpg"),
-        linear-gradient(
-      rgba(0, 0, 255, 0.25),
-      rgba(0, 0, 255, 0.25)
-    );
+        background: linear-gradient(rgba(210, 71, 90, 0.5), rgba(210, 71, 90, 0.5)),
+         url("https://i.pinimg.com/564x/97/37/fa/9737fac98cbdb90ebcecfffc073e0f7c.jpg") center center no-repeat;
+
+ 	background-attachment:fixed;
+	background-size: cover;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
         
         }
         
@@ -375,11 +377,10 @@
         
         
         /*  FOLLOW*/
-        .Follow {	  background:url("https://pbs.twimg.com/profile_images/959092900708544512/v4Db9QRv_bigger.jpg");
-            background: no-repeat;
+        .Follow {	  background:url("https://pbs.twimg.com/profile_images/959092900708544512/v4Db9QRv_bigger.jpg")no-repeat;
             width: 50px;
             height: 50px;
-            bottom: 9px;
+            bottom: 30px;
             right: 20px;
             display:block;
             position:fixed;
@@ -403,7 +404,7 @@
             display:none;
             position:absolute;
             margin:0 auto;
-            top: 45%;
+            top: 35%;
             left: 50%;
             transform: translate(-50%, -50%);
             box-shadow: 0px 0px 50px 2px #000;
@@ -411,7 +412,7 @@
     
         button {
             margin: 50px;
-            top: -170px;
+            top: -120px;
           }
           .custom-btn1 {
             width: 130px;
@@ -501,22 +502,20 @@
             -moz-transform: rotateX(-90deg);
             transform: rotateX(-90deg);
           }
-          
-          
-    </style>
+        </style>
 </head>
 
 <div class="wrapper">
-    
+
     <div id="popup" class="popup panel panel-primary">
         
         <!-- and here comes the image -->
-        <img src="https://i.pinimg.com/564x/a1/a5/f9/a1a5f9652549ba2d873a709886abcf6d.jpg" alt="popup">
+        <img src="https://i.pinimg.com/564x/5c/4b/cc/5c4bccb3d50a1dbae802658d22f2f5d5.jpg" alt="popup">
             
             <!-- Now this is the button which closes the popup-->
         <div class="panel-footer">
     
-            <button id="close" class="btn1 btn1-lg btn1-primary"><span>YES, Following...!</span><span>DONE</span></button>
+            <button id="close" class="btn1 btn1-lg btn1-primary"><span>YES, I will remember!</span><span>DONE</span></button>
         </div>
             
             <!-- and finally we close the POPUP FRAME-->
@@ -578,12 +577,6 @@
 </div>
 
 <script>
-    function onProgress(){
-        alert('THANKS FOR THE VISIT');
-    }    
-</script>
-
-<script>
     $(document).ready(function () {
         //select the POPUP FRAME and show it
         $("#popup").hide().fadeIn(1000);
@@ -594,6 +587,12 @@
             $("#popup").fadeOut(1000);
         });
     });
+</script>
+
+<script>
+    function onProgress(){
+        alert('THANKS FOR THE VISIT');
+    }    
 </script>
 
 <!-- FOLLOW -->
